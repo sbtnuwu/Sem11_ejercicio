@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8b444"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFechaNacimiento"
+        app:layout_constraintStart_toEndOf="@+id/textViewFechaNacimiento"
+        app:layout_constraintTop_toTopOf="@+id/textViewFechaNacimiento"
+        app:srcCompat="@drawable/fecha" />
+
+    <TextView
+        android:id="@+id/textViewCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textViewCarrera"
+        android:textColor="#285484"
+        app:layout_constraintStart_toStartOf="@+id/textViewFechaNacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFechaNacimiento" />
+
+    <TextView
+        android:id="@+id/textViewConvocatoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/textViewConvocatoria"
+        android:textColor="#285484"
+        app:layout_constraintStart_toStartOf="@+id/textViewCarrera"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textViewFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textViewFechaNacimiento"
+        android:textColor="#285484"
+        app:layout_constraintStart_toStartOf="@+id/textViewClave"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClave" />
+
+    <TextView
+        android:id="@+id/textViewClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textViewClave"
+        android:textColor="#285484"
+        app:layout_constraintStart_toStartOf="@+id/textViewCorreoElectronico"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorreoElectronico" />
+
+    <TextView
+        android:id="@+id/textViewExamenAdmision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/textViewExamenAdmision"
+        android:textColor="#285484"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFormularioRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/textViewFormularioRegistro"
+        android:textColor="#285484"
+        app:layout_constraintEnd_toEndOf="@+id/textViewExamenAdmision"
+        app:layout_constraintStart_toStartOf="@+id/textViewExamenAdmision"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExamenAdmision" />
+
+    <TextView
+        android:id="@+id/textViewApellidosNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/textViewApellidosNombres"
+        android:textColor="#285484"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/textViewFormularioRegistro" />
+
+    <TextView
+        android:id="@+id/textViewCorreoElectronico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textViewCorreoElectronico"
+        android:textColor="#285484"
+        app:layout_constraintStart_toStartOf="@+id/textViewApellidosNombres"
+        app:layout_constraintTop_toBottomOf="@+id/textViewApellidosNombres" />
+
+    <EditText
+        android:id="@+id/editTextApellidosNombres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellidos y Nombres"
+        android:inputType="text"
+        android:text="@string/editTextApellidosNombres"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewApellidosNombres"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textViewApellidosNombres" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <EditText
+        android:id="@+id/editTextCorreoElectronico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:text="@string/editTextCorreoElectronico"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCorreoElectronico"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textViewCorreoElectronico" />
+
+    <EditText
+        android:id="@+id/editTextClave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:text="@string/editTextClave"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewClave"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textViewClave" />
+
+    <EditText
+        android:id="@+id/editTextFechaNacimiento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fecha de Nacimiento"
+        android:inputType="date"
+        android:text="@string/editTextFechaNacimiento"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFechaNacimiento"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textViewFechaNacimiento" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="4dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCarrera"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCarrera">
+
+        <RadioButton
+            android:id="@+id/radioButtonIngSistemas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonIngSistemas"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIngAmbiental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonIngAmbiental" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIngMecanica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonIngMecanica" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAdministracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonAdministracion" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBoxRadio"
+        app:layout_constraintStart_toStartOf="@+id/textViewConvocatoria"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConvocatoria" />
+
+    <CheckBox
+        android:id="@+id/checkBoxInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBoxInternet"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRadio" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAmigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBoxAmigo"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConvocatoria" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPublicidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBoxPublicidad"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAmigo" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#285484"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewApellidosNombres"
+        app:layout_constraintStart_toEndOf="@+id/textViewApellidosNombres"
+        app:layout_constraintTop_toTopOf="@+id/textViewApellidosNombres"
+        app:srcCompat="@drawable/nombres" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCorreoElectronico"
+        app:layout_constraintStart_toEndOf="@+id/textViewCorreoElectronico"
+        app:layout_constraintTop_toTopOf="@+id/textViewCorreoElectronico"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewClave"
+        app:layout_constraintStart_toEndOf="@+id/textViewClave"
+        app:layout_constraintTop_toTopOf="@+id/textViewClave"
+        app:srcCompat="@drawable/clave" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCarrera"
+        app:layout_constraintStart_toEndOf="@+id/textViewCarrera"
+        app:layout_constraintTop_toTopOf="@+id/textViewCarrera"
+        app:srcCompat="@drawable/curso" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewConvocatoria"
+        app:layout_constraintStart_toEndOf="@+id/textViewConvocatoria"
+        app:layout_constraintTop_toTopOf="@+id/textViewConvocatoria"
+        app:srcCompat="@drawable/convocatoria" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup"
+        app:srcCompat="@drawable/sistemas" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/ambiental" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/mecanica" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@drawable/administracion" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxRadio"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxRadio"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxRadio"
+        app:srcCompat="@drawable/radio" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxInternet"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxInternet"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxInternet"
+        app:srcCompat="@drawable/internet" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxAmigo"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxAmigo"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxAmigo"
+        app:srcCompat="@drawable/amigo" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxPublicidad"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxPublicidad"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxPublicidad"
+        app:srcCompat="@drawable/publicidad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DAM_SebastianRakauskas</string>
+    <string name="prueba">textViewExamenAdmision</string>
+    <string name="textViewExamenAdmision">Examen de Admisión 2023</string>
+    <string name="textViewFormularioRegistro">Formulario de Registro</string>
+    <string name="textViewApellidosNombres">Apellidos y Nombre</string>
+    <string name="textViewCorreoElectronico">Correo Electrónico</string>
+    <string name="textViewClave">Clave</string>
+    <string name="Prueba2">Clave</string>
+    <string name="textViewFechaNacimiento">Fecha de Nacimiento</string>
+    <string name="textViewCarrera">Carrera</string>
+    <string name="textViewConvocatoria">¿Por qué medio se enteró de la convocatoria?</string>
+    <string name="editTextApellidosNombres" />
+    <string name="editTextCorreoElectronico" />
+    <string name="editTextClave" />
+    <string name="editTextFechaNacimiento" />
+    <string name="radioButtonIngSistemas">Ingeniería de Sistemas</string>
+    <string name="radioButtonIngAmbiental">Ingeniería Ambiental</string>
+    <string name="radioButtonIngMecanica">Ingeniería Mecánica</string>
+    <string name="radioButtonAdministracion">Administración</string>
+    <string name="checkBoxRadio">Radio</string>
+    <string name="checkBoxInternet">Internet</string>
+    <string name="checkBoxAmigo">Amigo</string>
+    <string name="checkBoxPublicidad">Publicidad</string>
+</resources>
